@@ -7,4 +7,8 @@ class Room
 		@description = description
 		@connections = connections
 	end
+
+	def full_description
+		@name + "\n\nYou are in " + @description
+	end
 end
